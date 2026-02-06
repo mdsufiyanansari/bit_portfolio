@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import useScrollFade from "../hooks/useScrollFade";
 
 export default function About() {
@@ -8,6 +9,8 @@ export default function About() {
   const image = useScrollFade({ delay: 150, y: 40 });
 
   return (
+    
+    <div>
     <section className="bg-white py-24 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
 
@@ -80,7 +83,11 @@ export default function About() {
         </div>
 
       </div>
+      
+    
     </section>
+  
+    </div>
   );
 }
 
@@ -109,6 +116,7 @@ function Content({ title, text }) {
       <p className="mt-3 text-gray-600 text-lg leading-relaxed">
         {text}
       </p>
+     
     </div>
   );
 }

@@ -3,6 +3,7 @@
 // https://codepen.io/BalintFerenczy/pen/KwdoyEN
 
 import ElectricBorder from "../animation/ElectricBorder";
+import Footer from "../components/Footer";
 import useScrollFade from "../hooks/useScrollFade";
 
 import {
@@ -24,6 +25,7 @@ export default function Skills() {
   const tools = useScrollFade({ delay: 300 });
 
   return (
+    <div>
     <section
       className="relative min-h-screen bg-cover bg-center overflow-hidden"
       style={{
@@ -101,6 +103,8 @@ export default function Skills() {
         </div>
       </div>
     </section>
+   
+    </div>
   );
 }
 

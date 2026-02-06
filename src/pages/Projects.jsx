@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import useScrollFade from "../hooks/useScrollFade";
+import Footer from "../components/Footer";
 
 /* =========================
    PROJECT DATA
@@ -71,6 +72,7 @@ export default function Projects() {
   const button = useScrollFade({ delay: 300 });
 
   return (
+    <div className="">
     <section
       className="relative min-h-screen bg-cover bg-center overflow-hidden"
       style={{
@@ -149,6 +151,7 @@ export default function Projects() {
         </div>
       </div>
     </section>
+        </div>
   );
 }
 

@@ -9,6 +9,7 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   const header = useScrollFade();
@@ -47,6 +48,7 @@ setTimeout(() => {
   };
 
   return (
+    <div>
     <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#1b1d3a] via-[#252763] to-[#1b1d3a]">
       
       {/* BACKGROUND SHAPES */}
@@ -173,6 +175,8 @@ setTimeout(() => {
 
       </div>
     </section>
+ 
+    </div>
   );
 }
 

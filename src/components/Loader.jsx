@@ -54,7 +54,7 @@ export default function Loader({ onFinish }) {
               <motion.img
                 src="https://a.storyblok.com/f/217839/1000x1000/851503b537/20240702_bruce-hello.gif"
                 alt="hello gif"
-                className="w-40 h-40 object-contain"
+                className="md:w-40 md:h-40 w-20 h-20 object-contain"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.8 }}
