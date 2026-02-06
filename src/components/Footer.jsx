@@ -11,21 +11,25 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
 
         {/* TOP */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 border-b border-white/10 pb-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 pb-10">
           
           {/* LOGO / NAME */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold text-white">
-              Md Sufiyan Ansari
+            <h3 className="text-3xl font-extrabold tracking-wide">
+              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent">
+                Md Sufiyan
+              </span>
+              <span className="text-white ml-2">Ansari</span>
             </h3>
-            <p className="mt-2 text-gray-400 text-sm max-w-sm">
-              Full Stack Web Developer building modern, scalable and
-              high-performance web applications.
+
+            <p className="mt-3 text-gray-400 text-sm max-w-sm leading-relaxed">
+              Full Stack Web Developer crafting modern, scalable and
+              high-performance digital experiences.
             </p>
           </div>
 
           {/* SOCIAL LINKS */}
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-6">
             <SocialIcon
               href="https://github.com/mdsufiyanansari"
               label="GitHub"
@@ -49,15 +53,19 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* DIVIDER */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+
         {/* BOTTOM */}
         <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-          <p>
+          <p className="text-center md:text-left">
             © {new Date().getFullYear()} Md Sufiyan Ansari. All rights reserved.
           </p>
 
-          <p className="flex items-center gap-1">
-            Made with <FaHeart className="text-pink-500 animate-pulse" /> using
-            React & Tailwind
+          <p className="flex items-center gap-2">
+            Made with
+            <FaHeart className="text-pink-500 animate-pulse" />
+            using React & Tailwind
           </p>
         </div>
 
@@ -80,7 +88,9 @@ function SocialIcon({ href, children, label }) {
       className="w-12 h-12 flex items-center justify-center rounded-xl
       bg-white/5 backdrop-blur-xl border border-white/10
       text-white text-xl transition-all duration-300
-      hover:-translate-y-1 hover:bg-white/10 hover:shadow-lg"
+      hover:-translate-y-1 hover:bg-white/10
+      hover:shadow-[0_0_20px_rgba(168,85,247,0.5)]
+      hover:ring-1 hover:ring-purple-400/50"
     >
       {children}
     </a>

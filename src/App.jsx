@@ -11,6 +11,7 @@ import Skills from "./pages/Skills";
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
            
       </Routes>
       <Footer/>
+      <ScrollToTop/>
       </div>
       
     
