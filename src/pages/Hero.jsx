@@ -3,6 +3,7 @@ import useScrollFade from "../hooks/useScrollFade";
 import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
 import { HiArrowDownTray } from "react-icons/hi2";
 
+
 export default function Hero() {
   const left = useScrollFade({ delay: 0, y: 40 });
   const right = useScrollFade({ delay: 150, y: 40 });
@@ -41,7 +42,7 @@ export default function Hero() {
               flex items-center justify-center"
             >
               <img
-                src="https://i.pravatar.cc/400"
+                src="image.png"
                 alt="Md Sufiyan Ansari"
                 className="w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 rounded-full object-cover"
               />
